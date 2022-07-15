@@ -1,0 +1,30 @@
+package Week2.day2;
+
+public class ChangeOddIndexToUpperCase {
+
+	public static void main(String[] args) {
+		//* Declare String Input as Follow
+
+		//* String test = "changeme";
+		String str = "changeme";
+
+		//* a) Convert the String to character array
+		char[] ch = str.toCharArray();
+		int length = ch.length;
+		
+		// * b) Traverse through each character (using loop)
+		for (int i =0; i<ch.length;i++) {
+			
+			//* c)find the odd index within the loop (use mod operator)
+			if (i % 2 == 0){
+
+				//* d)within the loop, change the character to uppercase, if the index is odd else don't change
+				System.out.print(Character.toLowerCase(ch[i]));
+			} else 
+				System.out.print(Character.toUpperCase(ch[i]));
+		}
+		System.out.println();
+
+	}
+
+}
